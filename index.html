@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Food Website</title>
+  <style>
+    .title{
+      margin-top: 150px;
+      text-align: center;
+    }
+    .image{
+      background-image: url("heroimage.jpg");
+      height:60vh;
+      position: absolute;
+     
+    }
+    .text{
+      text-align: justify;
+      width:50%;
+      color:white;
+      font-size: medium;
+      font-weight: 100;
+      font-style: italic;
+      font-family: 'Times New Roman', Times, serif;
+      margin-left: 400px;
+    }
+    .text-part{
+      margin-left: 400px;
+      color:white;
+      font-size: 20px;
+    }
+    input[type=text]{
+      height:33px;
+      width:50%; 
+      font-size:small;
+      text-align: center;
+      border-radius:20px; 
+      border-color: blueviolet;
+    }
+    
+    input[type=submit]{
+      background-color:#00bab1;
+      text-align: center;
+      padding: 12px;
+      margin-left:150px;
+      border-radius: 10px;
+      margin-top:2px;
+      width:20%;
+    }
+    .below_image{
+      display:flex;
+      margin-top: 100px;
+      justify-content: space-between;
+    }
+    .product{
+      width:33%;
+    }
+    .product_description{
+      font-size: medium;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-style: oblique;
+    }
+    .food_name{
+      font-size: medium;
+      color:chartreuse;
+      font-style: italic;
+    }
+    .food_name:hover{
+      color:blue;
+      font-size:large;
+    }
+    .product:hover{
+      display:block;
+      transform:scale(1.1);
+      cursor:pointer;
+    }
+    .footer{
+      background-image: url(./food1.jpg);
+      background-color: black;
+      color:gold;
+      text-align: center;
+      font-size: medium;
+      font-style: italic;
+    }
+    @media screen and (max-width:40%) {
+      .below_image{
+      height:100vh;
+      float:none;  
+    }
+  }
+    
+  </style>
+</head>
+
+<body>
+  <div class="image">
+  <div class="title">
+    <h1 style="color:white; margin-left:-60px;">THE FOOD YOU LOVE</h1>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Veniam cum assumenda molestias voluptatum, excepturi minima. 
+      Sunt ducimus harum dolor illo aliquam explicabo, aliquid odio iure consequatur numquam asperiores, perferendis sapiente.</p>
+  </div>
+  <div class="text-part">
+  Postcode
+  <form>
+    <input type="text" name="on submitting" placeholder="Enter Your Food Name">
+    <br>
+    <input type ="submit" name="food" value="Find Food">
+  </form>
+  </div>
+  <div class="below_image">
+    <div class="product">
+    <img src="./food1.jpg" style="width:100%;">
+    <div class="product_description">
+    <div class="food_name">Daal Baati</div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta in reprehenderit, magnam saepe inventore dolor totam ducimus aspernatur quia repellendus necessitatibus placeat aliquid alias amet hic fuga eveniet animi dolore!</p>
+  </div>  
+  </div>
+    <div class="product"><img src="./food2.jpg" style="width:100%;" >
+      <div class="product_description">
+        <div class="food_name">Fresh Cutlate</div>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta in reprehenderit, magnam saepe inventore dolor totam ducimus aspernatur quia repellendus necessitatibus placeat aliquid alias amet hic fuga eveniet animi dolore!</p></div>
+    </div>
+      <div class="product">
+    <img src="./food3.jpg" style="width:100%;">
+    <div class="product_description">
+      <div class="food_name">Dosa</div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta in reprehenderit, magnam saepe inventore dolor totam ducimus aspernatur quia repellendus necessitatibus placeat aliquid alias amet hic fuga eveniet animi dolore!</p>
+  </div>  
+  </div>
+  </div>
+  <div class="footer">
+    <h2>Contact us :0123456789</h2>
+    <h2>Address:221B, Baker Street</h2>
+     </div>
+  </div>
+</body>
+
+</html>
